@@ -1,0 +1,86 @@
+body{
+    background-color: rgb(252, 179, 27);
+}
+
+#screen{
+    display: flex;
+    flex-direction: column;
+}
+
+#display{
+    height: 115px;
+    width: 310px;
+    background-color: rgb(33, 33, 33);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 40%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+#output-display{
+    background-color: rgb(59, 59, 59);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 268px;
+    height: 80.8px;
+    border-radius: 11.6px;
+    background-clip: border-box;
+    border-color: black;
+    box-shadow: rgba(0, 0, 0, 0.7) 2px 3px 5px 0px inset;
+}
+
+#inputs{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15%;
+}
+
+.user-input{
+    display: block;
+    margin:auto;
+    font-size: 21.2px;
+    font-weight: 400;
+    color: rgb(96, 160, 127);
+    font-family: 'Quicksand', 'Roboto', sans-serif;
+    width: 247.2px;
+    height: 27.2px;
+    width: 100%;
+    text-align: right;
+}
+
+.user-output{
+    display: block;
+    text-align: right;
+    margin:auto;
+    font-weight: 400;
+    color: rgb(96, 160, 127);
+    font-family: 'Quicksand', 'Roboto', sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    height: 32.8px;
+    width: 247.2px;
+}
+
+.all-buttons{
+    background-color: rgb(33, 33, 33);
+    width: 310px;
+    height: 360px;
+    background-color: rgb(33, 33, 33);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40%;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.top-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
