@@ -12,8 +12,8 @@
             <div id="display">
                 <div id="output-display">
                     <div id="inputs">
-                        <div class="user-input">
-                            <p id="inp">0</p>
+                        <div class="user-input" id="user-input">
+                            <p class="inp" id="inp">0</p>
                         </div>
                         <div class="user-output">
                             <p id="res"></p>
@@ -23,33 +23,33 @@
             </div>
             <div class="all-buttons">
                     <div class="top-buttons">
-                        <button id="allclear">AC</button>
-                        <button id="clear">DEL</button>
-                        <button id="remainder" value="%">%</button>
-                        <button id="divide" value="/">÷</button>
+                        <button onclick="clearDisplay()" id="allclear">AC</button>
+                        <button onclick="clearDisplayOne()" id="clear">DEL</button>
+                        <button id="remainder">%</button>
+                        <button onclick="appendToDisplay('÷')" id="divide">÷</button>
                     </div>
                     <div class="first-buttons">
-                        <button class="number" id="digit-7" value="7">7</button>
-                        <button class="number" id="digit-8" value="7">8</button>
-                        <button class="number" id="digit-9" value="7">9</button>
-                        <button id="plus" value="+">+</button>
+                        <button  onclick="appendToDisplay('7')" class="number" id="digit-7" value="7">7</button>
+                        <button onclick="appendToDisplay('8')" class="number" id="digit-8" value="8">8</button>
+                        <button onclick="appendToDisplay('9')" class="number" id="digit-9" value="9">9</button>
+                        <button onclick="appendToDisplay('+')" id="plus" value="+">+</button>
                     </div>
                     <div class="second-buttons">
-                        <button class="number" id="digit-4" value="4">4</button>
-                        <button class="number" id="digit-5" value="5">5</button>
-                        <button class="number" id="digit-6" value="6">6</button>
-                        <button id="minus" value="-">-</button>
+                        <button onclick="appendToDisplay('4')" class="number" id="digit-4">4</button>
+                        <button onclick="appendToDisplay('5')" class="number" id="digit-5">5</button>
+                        <button onclick="appendToDisplay('6')" class="number" id="digit-6">6</button>
+                        <button onclick="appendToDisplay('-')" id="minus">-</button>
                     </div>
                     <div class="third-numbers">
-                        <button class="number" id="digit-1" value="1">1</button>
-                        <button class="number" id="digit-2" value="2">2</button>
-                        <button class="number" id="digit-3" value="3">3</button>
-                        <button id="multiply" value="x">×</button>
+                        <button onclick="appendToDisplay('1')" class="number" id="digit-1">1</button>
+                        <button onclick="appendToDisplay('2')" class="number" id="digit-2">2</button>
+                        <button onclick="appendToDisplay('3')" class="number" id="digit-3">3</button>
+                        <button onclick="appendToDisplay('×')" id="multiply">×</button>
                     </div>
                     <div class="four-numbers">
-                        <button class="number" id="digit-0" value="0">0</button>
-                        <button id="point" value=".">.</button>
-                        <button id="answer" value="=">=</button>
+                        <button onclick="appendToDisplay('0')" class="number" id="digit-0">0</button>
+                        <button onclick="appendToDisplay('.')" id="point">.</button>
+                        <button onclick="calculate()" id="answer">=</button>
                     </div>
             </div>
         </div>
