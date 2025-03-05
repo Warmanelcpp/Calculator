@@ -109,3 +109,12 @@ button{
     display: flex;
     gap: 8px;
 }
+
+.operator{
+    background-color: rgb(255,149,0);
+}
+
+.lop{
+    background-color: rgb(212, 212, 210);
+    color: black;
+}

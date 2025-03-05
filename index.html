@@ -23,33 +23,33 @@
             </div>
             <div class="all-buttons">
                     <div class="top-buttons">
-                        <button onclick="clearDisplay()" id="allclear">AC</button>
-                        <button onclick="clearDisplayOne()" id="clear">DEL</button>
-                        <button id="remainder">%</button>
-                        <button onclick="appendToDisplay('÷')" id="divide">÷</button>
+                        <button class="lop" onclick="clearDisplay()" id="allclear">AC</button>
+                        <button class="lop" onclick="clearDisplayOne()" id="clear">DEL</button>
+                        <button class="lop" id="remainder">%</button>
+                        <button onclick="appendToDisplay('÷')" class="operator" id="divide">÷</button>
                     </div>
                     <div class="first-buttons">
                         <button  onclick="appendToDisplay('7')" class="number" id="digit-7" value="7">7</button>
                         <button onclick="appendToDisplay('8')" class="number" id="digit-8" value="8">8</button>
                         <button onclick="appendToDisplay('9')" class="number" id="digit-9" value="9">9</button>
-                        <button onclick="appendToDisplay('+')" id="plus" value="+">+</button>
+                        <button onclick="appendToDisplay('+')" class="operator" id="plus" value="+">+</button>
                     </div>
                     <div class="second-buttons">
                         <button onclick="appendToDisplay('4')" class="number" id="digit-4">4</button>
                         <button onclick="appendToDisplay('5')" class="number" id="digit-5">5</button>
                         <button onclick="appendToDisplay('6')" class="number" id="digit-6">6</button>
-                        <button onclick="appendToDisplay('-')" id="minus">-</button>
+                        <button onclick="appendToDisplay('-')" class="operator" id="minus">-</button>
                     </div>
                     <div class="third-numbers">
                         <button onclick="appendToDisplay('1')" class="number" id="digit-1">1</button>
                         <button onclick="appendToDisplay('2')" class="number" id="digit-2">2</button>
                         <button onclick="appendToDisplay('3')" class="number" id="digit-3">3</button>
-                        <button onclick="appendToDisplay('×')" id="multiply">×</button>
+                        <button onclick="appendToDisplay('×')" class="operator" id="multiply">×</button>
                     </div>
                     <div class="four-numbers">
                         <button onclick="appendToDisplay('0')" class="number" id="digit-0">0</button>
                         <button onclick="appendToDisplay('.')" id="point">.</button>
-                        <button onclick="calculate()" id="answer">=</button>
+                        <button onclick="calculate()" class="operator" id="answer">=</button>
                     </div>
             </div>
         </div>
